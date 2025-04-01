@@ -1,0 +1,31 @@
+/* home.css */
+.home {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.member-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.profile-card {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+}
+
+.profile-card h2 {
+  font-size: 1.5rem;
+}
+
+.group-log {
+  margin-top: 30px;
+}
