@@ -1,4 +1,3 @@
-// schemas/header.js
 export default {
     name: 'header',
     title: 'Header',
@@ -7,24 +6,14 @@ export default {
       {
         name: 'groupName',
         title: 'Group Name',
-        type: 'string'
-      },
-      {
-        name: 'groupNumber',
-        title: 'Group Number',
-        type: 'string'
+        type: 'string',
       },
       {
         name: 'members',
         title: 'Group Members',
         type: 'array',
-        of: [
-          {
-            type: 'reference',
-            to: [{ type: 'person' }]  // Assuming 'person' schema contains member profiles
-          }
-        ]
+        of: [{ type: 'reference', to: [{ type: 'person' }] }],
       }
-    ]
+    ],
   };
   

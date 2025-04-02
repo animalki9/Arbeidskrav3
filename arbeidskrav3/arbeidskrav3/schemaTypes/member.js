@@ -1,21 +1,33 @@
 export default {
-  name: 'member',
+  name: 'person',
+  title: 'Person',
   type: 'document',
-  title: 'Group Members',
   fields: [
-    { name: 'name', type: 'string', title: 'Name' },
-    { name: 'email', type: 'string', title: 'Email' },
-    { 
-      name: 'image', 
-      type: 'image', 
-      title: 'Profile Picture', 
-      options: { hotspot: true } 
+    {
+      name: 'fornavn',
+      title: 'Fornavn',
+      type: 'string',
     },
-    { 
-      name: 'slug', 
-      type: 'slug', 
-      title: 'Slug', 
-      options: { source: 'name', maxLength: 200 } 
-    }
+    {
+      name: 'etternavn',
+      title: 'Etternavn',
+      type: 'string',
+    },
+    {
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+      options: { source: 'fornavn', maxLength: 96 },
+    },
+    {
+      name: 'epost',
+      title: 'E-post',
+      type: 'string',
+    },
+    {
+      name: 'bilde',
+      title: 'Bilde',
+      type: 'image',
+    },
   ]
 }

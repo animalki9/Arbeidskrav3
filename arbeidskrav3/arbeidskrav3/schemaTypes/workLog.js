@@ -1,16 +1,28 @@
 export default {
   name: 'workLog',
+  title: 'Arbeidslogg',
   type: 'document',
-  title: 'Work Log',
   fields: [
-    { name: 'date', type: 'date', title: 'Date' },
-    { 
-      name: 'member', 
-      type: 'reference', 
-      title: 'Member', 
-      to: [{ type: 'member' }] 
+    {
+      name: 'dato',
+      title: 'Dato',
+      type: 'date'
     },
-    { name: 'task', type: 'string', title: 'Task Description' },
-    { name: 'hours', type: 'string', title: 'Time Spent' }
+    {
+      name: 'person',
+      title: 'Person',
+      type: 'reference',
+      to: [{ type: 'person' }] // 👈 Dette må matche name: 'person' i member.js
+    },
+    {
+      name: 'oppgave',
+      title: 'Oppgave',
+      type: 'string'
+    },
+    {
+      name: 'timer',
+      title: 'Timer',
+      type: 'number'
+    }
   ]
 }
