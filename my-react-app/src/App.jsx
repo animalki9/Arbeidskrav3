@@ -7,10 +7,12 @@ function App() {
   return (
     <Router>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/profile/:name" element={<Profile />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/profile/:slug" element={<Profile />} />
+        </Routes>
+      </main>
     </Router>
   );
 }
