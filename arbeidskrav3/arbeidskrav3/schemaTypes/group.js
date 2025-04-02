@@ -1,4 +1,3 @@
-// schemas/group.js
 export default {
   name: 'group',
   title: 'Gruppe',
